@@ -1,0 +1,290 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url(./asset/sl_032421_41660_19.jpg);
+    background-position:center;
+    background-size: cover;
+}
+.container .navbar{
+    width: 100%;
+    height: auto;
+    background-color: lightcyan;
+    box-shadow: 0px 4px 25px 0px rgb(146, 145, 145);
+}
+.navbar .nav1{
+    width: 100%;
+    height: 23px;
+    background-color: whitesmoke;
+    border-bottom: 1px solid  rgb(225, 222, 222);
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    padding-left: 20px;
+}
+/*-------------------------------------- */
+.navbar .nav2{
+    width: 100%;
+    height: 52px;
+    background-color: whitesmoke;
+    border-bottom: 1px solid rgb(225, 222, 222);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 25px;
+}
+.nav2 .logo img{
+    width: 230px;
+    filter: contrast(250%);
+    filter: saturate(200%);
+}
+.nav2 .login{
+    width: 28%;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login ul{
+    width: 23%;
+    font-size: 21px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+}
+.login h5{
+    font-size: 15px;
+}
+.login button{
+    width: 120px;
+    height: 39px;
+    font-size: 14px;
+    color:  #31c9c7;
+    background-color: transparent;
+    border: 2px solid  #29aba9;
+    border-radius: 30px;
+    font-weight: 600;
+}
+/*-------------------------------------------- */
+.navbar .nav3{
+    width: 100%;
+    height: 39px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 35px;
+}
+.nav3 .icon{
+    width: 33px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #76d8d1;
+}
+.icon img{
+    width: 18px;
+    position: relative;
+    top: 6px;
+    left: 7px;
+}
+.icon:first-child img{
+    width: 22px;
+    left: 6px;
+    top: 4px;
+}
+.icon:last-child input{
+    display: none;
+}
+.nav3 .link{
+    width: 60%;
+    height: auto;
+}
+.nav3 .link ul{
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+.link ul a{
+    text-decoration: none;
+    color: rgb(42, 42, 42);
+}
+/*---------------------------------------------------navbar end---------------------------------------------------- */
+
+.container .main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.main .left{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 38px 50px 20px 65px;
+}
+.left h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 34px;
+    line-height: 45px;
+}
+.left ul{
+    padding-left: 42px;
+    line-height: 33px;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.left button{
+    width: 160px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #06908e ;
+    color: white;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    margin-top: 25px;
+}
+.left img{
+    position: relative;
+    left: 165px;
+    bottom: 28px;
+    transform: rotate(180deg);
+}
+
+.main .right{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.right img{
+    width: 90%;
+}
+.right .sms{
+    width: 45px;
+    height: 44px;
+    font-size: 24px;
+    border: 2px solid #06908e;
+    border-radius: 50px;
+    position: relative;
+    left: 245px;
+}
+.sms i{
+    position: relative;
+    top: 7px;
+    left: 8px;
+}
+
+/*----------------------------------------------------Responsive CSS-----------------------------------------------------*/
+@media (max-width:768px) {
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .container .navbar{
+        width: 100%;
+        height: 130px;
+    }
+    .navbar.nav1{
+        height: 32px;
+    }
+    .navbar .nav2{
+        height: 63px;
+    }
+    .nav2 .login{
+        width: 30%;
+    }
+    .login ul{
+        width: 34%;
+    }
+    .nav2 .login h5{
+        display:none;
+    }
+
+    .navbar .nav3{
+        padding-inline: 23px;
+        height: 45px;
+    }
+    .nav3 .link{
+        display: none;
+    }
+    .icon:first-child{
+        margin-left: 25px;
+    }
+    .icon:last-child{
+        width: 350px;
+        height: 40px;
+        border-radius: 15px;
+        background-color: transparent;
+        border: 2px solid  #29aba9;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: 12px;
+        position: relative;
+    }
+    .icon:last-child img{
+        width: 23px;
+        position: absolute;
+        left: 10px;
+        bottom:20px;
+        margin-left: 9px;
+    }
+    .icon:last-child input{
+        display: block;
+        width: 260px;
+        font-size: 17px;
+        margin-left: 10px;
+        border: none;
+        background-color: transparent;
+    }
+
+    .main .right .sms{
+        display: none;
+    }
+    .container .main{
+        width: 100%;
+        height: 430px;
+    }
+    .main .left{
+        width:60%;
+        height: 430px;
+        padding: 0;
+        padding-left: 40px;
+        padding-right: 20px;
+        padding-top: 40px;
+    }
+    .left h1{
+        font-size: 28px;
+        line-height: 43px;
+    }
+    .left ul{
+        margin-bottom: 30px;
+    }
+    .main .left button{
+        width: 160px;
+        height: 50px;
+        font-size: 18px;
+        margin-top: 0px;
+    } 
+    .main .right{
+        width: 48%;
+        height: 430px;
+    }
+    .right img{
+        width: 350px;
+    }
+
+}
